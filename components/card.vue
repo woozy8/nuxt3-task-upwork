@@ -25,18 +25,19 @@
     </div>
 
     <div
-      class="h-full w-full space-y-[12px] rounded-r-xl !bg-white px-4 py-10 text-[#353844] md:px-[30px]"
+      class="h-full w-full space-y-3 rounded-r-xl bg-white px-4 py-10 text-[#353844] md:px-[30px]"
     >
       <h2 class="text-2xl font-bold">{{ props.title }}</h2>
 
-      <div class="space-y-[12px] font-['Nunito_Sans']">
+      <div class="space-y-3 font-['Nunito_Sans']">
         <div>
           <div
             v-for="item in props.benefits"
             :key="item"
             class="flex items-center gap-2"
           >
-            <div class="h-[6px] w-[6px] rounded-3xl bg-[#D2AD81]"></div>
+            <div class="h-1.5 w-1.5 rounded-full bg-[#D2AD81]"></div>
+
             <div class="text-[15px] font-bold leading-[26px]">
               {{ item }}
             </div>
@@ -56,7 +57,7 @@ interface Props {
   images: Array<string>
   title: string
   description: string
-  benefits: Array<string>
+  benefits: Array<string> | null
 }
 
 const props = defineProps<Props>()
