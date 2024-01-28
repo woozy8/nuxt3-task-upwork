@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       Poppins: [700],
-      Nunito: [600, 700],
+      'Nunito+Sans': [600, 700],
     },
   },
 })
