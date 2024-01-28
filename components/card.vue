@@ -1,23 +1,23 @@
 <template>
   <div class="flex md:h-[250px] lg:h-[336px]">
     <div
-      class="h-full min-w-[130px] max-w-[130px] rounded-l-xl md:min-w-[186px] md:max-w-[186px]"
+      class="h-full min-w-[130px] max-w-[130px] rounded-l-lg md:min-w-[186px] md:max-w-[186px]"
     >
       <img
         v-if="props.images.length === 1"
         :src="`/${props.images.at(0)}.png`"
         :alt="props.images.at(0)"
-        class="h-full w-full rounded-l-xl object-cover object-center"
+        class="h-full w-full rounded-l-lg object-cover object-center"
         loading="lazy"
       />
 
-      <div v-else class="grid h-full grid-rows-2 gap-1 rounded-l-xl">
+      <div v-else class="grid h-full grid-rows-2 gap-1 rounded-l-lg">
         <div v-for="(image, index) in props.images" :key="image">
           <img
             :src="`/${image}.png`"
             :alt="image"
-            class="rounded-lt-xl h-full w-full object-cover object-center"
-            :class="[index > 0 ? 'rounded-bl-xl ' : 'rounded-tl-xl object-top']"
+            class="rounded-lt-lg h-full w-full object-cover object-center"
+            :class="[index > 0 ? 'rounded-bl-lg ' : 'rounded-tl-lg object-top']"
             loading="lazy"
           />
         </div>
@@ -25,7 +25,7 @@
     </div>
 
     <div
-      class="h-full w-full space-y-3 rounded-r-xl bg-white px-4 py-10 text-[#353844] md:px-[30px]"
+      class="h-full w-full space-y-3 rounded-r-lg bg-white px-4 py-10 text-[#353844] md:px-[30px]"
     >
       <h2 class="text-2xl font-bold">{{ props.title }}</h2>
 
