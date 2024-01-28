@@ -30,7 +30,7 @@
       <h2 class="text-2xl font-bold">{{ props.title }}</h2>
 
       <div class="space-y-3 font-['Nunito_Sans']">
-        <div>
+        <div v-if="!!props.benefits">
           <div
             v-for="item in props.benefits"
             :key="item"
