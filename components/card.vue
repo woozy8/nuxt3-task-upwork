@@ -17,7 +17,7 @@
             :src="`/${image}.png`"
             :alt="image"
             class="rounded-lt-xl h-full w-full object-cover object-center"
-            :class="[index > 0 ? 'rounded-bl-xl' : 'rounded-tl-xl']"
+            :class="[index > 0 ? 'rounded-bl-xl ' : 'rounded-tl-xl object-top']"
             loading="lazy"
           />
         </div>
